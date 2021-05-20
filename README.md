@@ -4,4 +4,13 @@
 - 💞️ I’m looking to collaborate on an ambitous project. To help client to use the digital to make our world easier and better.
 - 📫 How to reach me : sassi_r@etna-alternance.net
 
+===== How to use your code ? =====
+
+After you cloned my repo, do :
+$ cd Gate-Of-Hyrule
+$ chmod +x hyrule.castle.sh
+$ ./hyrule.castle.sh
+
+And you're ready to test ! 
+
 I'm ready to learn, to improve ! Help me to do it.
