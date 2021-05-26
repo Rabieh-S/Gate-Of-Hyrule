@@ -63,19 +63,19 @@ getBossHpFromCsv() {
 		    fi 
 done < bosses.csv
 	}
-getEnemyNameFromCsv() {
+getBossNameFromCsv() {
 	    while IFS=',' read -r id name hp mp str int def res spd luck race rarity; do
-		if [[ $name = Bokoblin ]]; then
+		if [[ $name = Ganon ]]; then
 		    echo -e $RED$name $NORMAL
 		fi
-	    done < enemies.csv
+	    done < bosses.csv
 }
 bossSTR() {
 while IFS=',' read -r id name hp mp str int def res spd luck race rarity; do
     if [[ $name = Ganon ]]; then
         echo $str
     fi  
-done < enemies.csv
+done < bosses.csv
 }
 	
 LinkHealing() {
@@ -193,7 +193,7 @@ while [[ $enemyRealHp -gt 0 ]] && [[ $linkRealHp -gt 0 ]]; do
     echo "Enemy attacked and dealt $(bossSTR)"
     linkRealHp=$(($linkRealHp - $(bossSTR)))
     echo "
-Enemy attacked and dealt $(enemySTR) damages !"
+Enemy attacked and dealt $(bossSTR) damages !"
 done
 
     #Conclusion
